@@ -12,6 +12,8 @@ apis:
     description: >-
       A super simple service for generating different HTTP codes. Its useful for
       testing how your own scripts deal with varying responses.
+  - name: OpenAPI
+    humanURL: properties/openapi.yml
 name: httpstat
 tags:
   - Utilities
