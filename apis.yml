@@ -8,7 +8,7 @@ apis:
     humanURL: https://httpstat.us/
     properties:
       - url: https://httpstat.us/
-        type: OpenAPI
+        type: Documentation
       - url: properties/httpstat.yml
         name: OpenAPI
         type: OpenAPI
