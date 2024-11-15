@@ -1,0 +1,15 @@
+meta {
+  name: Generate a random HTTP status code
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/random/:range
+  body: none
+  auth: none
+}
+
+params:path {
+  range: 200-300
+}

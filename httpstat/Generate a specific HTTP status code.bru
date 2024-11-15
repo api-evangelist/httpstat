@@ -1,0 +1,19 @@
+meta {
+  name: Generate a specific HTTP status code
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/:statusCode
+  body: none
+  auth: none
+}
+
+params:query {
+  ~sleep: 
+}
+
+params:path {
+  statusCode: 404
+}

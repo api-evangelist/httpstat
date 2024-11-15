@@ -1,6 +1,6 @@
 openapi: 3.1.0
 info:
-  title: httpstat.us API
+  title: httpstat
   description: |
     A simple service for generating various HTTP status codes.  
     Use this API to test how your scripts handle different HTTP responses.
