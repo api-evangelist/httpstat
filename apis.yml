@@ -4,7 +4,9 @@ apis:
   - aid: httpstat:httpstat
     name: httpstat.us API
     tags:
-      - API
+      - HTTP
+      - Status Codes
+      - Utilities
     humanURL: https://httpstat.us/
     properties:
       - url: https://httpstat.us/
