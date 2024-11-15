@@ -1,0 +1,30 @@
+aid: httpstat
+name: httpstat
+description: >-
+  A super simple service for generating different HTTP codes. Its useful for
+  testing how your own scripts deal with varying responses.
+type: Index
+position: Consumer
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - API
+created: '2024-11-15'
+modified: '2024-11-15'
+url: https://raw.githubusercontent.com/api-search/httpstat/refs/heads/main/apis.yml
+specificationVersion: '0.19'
+apis:
+  - aid: httpstat:httpstat
+    name: httpstat
+    description: >-
+      A super simple service for generating different HTTP codes. Its useful for
+      testing how your own scripts deal with varying responses.
+    humanURL: https://httpstat.us/
+    tags:
+      - API
+    properties:
+      - type: Documentation
+        url: https://httpstat.us/
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
