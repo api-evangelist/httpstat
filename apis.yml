@@ -2,19 +2,18 @@ aid: httpstat
 url: https://raw.githubusercontent.com/api-search/httpstat/refs/heads/main/apis.yml
 apis:
   - aid: httpstat:httpstat
-    name: httpstat.us API
+    name: httpstat
     tags:
-      - Status Codes
-      - HTTP
+      - API
     humanURL: https://httpstat.us/
     properties:
       - url: https://httpstat.us/
-        type: OpenAPI
-    description: |
-      A simple service for generating various HTTP status codes.  
-      Use this API to test how your scripts handle different HTTP responses.
-  - name: OpenAPI
-    humanURL: properties/openapi.yml
+        type: Documentation
+      - name: OpenAPI
+        url: properties/httpstat.yml
+    description: >-
+      A super simple service for generating different HTTP codes. Its useful for
+      testing how your own scripts deal with varying responses.
 name: httpstat
 tags:
   - Utilities
@@ -23,7 +22,7 @@ tags:
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
-created: '2024-11-15'
+created: '2024-11-15T00:00:00.000Z'
 modified: '2024-11-15'
 position: Consumer
 description: >-
