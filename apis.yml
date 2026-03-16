@@ -1,43 +1,42 @@
-specificationVersion: '0.19'
 aid: httpstat
-name: httpstat
+name: httpstat.us
+description: >-
+  httpstat.us is a super simple service for generating different HTTP status
+  codes. It is useful for testing how your own scripts and applications deal
+  with varying HTTP responses, allowing developers to simulate different
+  server response scenarios.
+url: https://raw.githubusercontent.com/api-evangelist/httpstat/refs/heads/main/apis.yml
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Utilities
   - Status Codes
   - HTTP
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-url: https://raw.githubusercontent.com/api-search/httpstat/refs/heads/main/apis.yml
-type: Index
-access: 3rd-Party
+  - Testing
 created: '2024-11-15'
-modified: '2024-11-15'
-position: Consumer
-description: >-
-  A super simple service for generating different HTTP codes. Its useful for
-  testing how your own scripts deal with varying responses.
+modified: '2026-03-16'
+specificationVersion: '0.19'
 apis:
-  - aid: httpstat:httpstat
+  - aid: httpstat:httpstat-api
     name: httpstat.us API
+    description: >-
+      A simple service for generating various HTTP status codes. Use this
+      API to test how your scripts handle different HTTP responses. Returns
+      the specified HTTP status code on every request.
+    humanURL: https://httpstat.us/
+    baseURL: https://httpstat.us
     tags:
       - HTTP
       - Status Codes
       - Utilities
-    humanURL: https://httpstat.us/
     properties:
-      - url: https://httpstat.us/
-        type: Documentation
-      - url: openapi/httpstat.yml
-        name: OpenAPI
-        type: OpenAPI
-      - url: httpstat/collection.bru
-        name: Bruno Collection
-        type: BrunoCollection
-      - url: httpstat/environments/httpstat.bru
-        name: Bruno Environment
-        type: BrunoEnvironment
-    description: |
-      A simple service for generating various HTTP status codes.  
-      Use this API to test how your scripts handle different HTTP responses.
+      - type: Documentation
+        url: https://httpstat.us/
+      - type: OpenAPI
+        url: openapi/httpstat.yml
+common:
+  - type: Website
+    url: https://httpstat.us/
 maintainers:
   - FN: Kin Lane
-    email: info@apievangelist.com
+    email: kin@apievangelist.com
