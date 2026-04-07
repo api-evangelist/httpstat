@@ -9,10 +9,10 @@ url: https://raw.githubusercontent.com/api-evangelist/httpstat/refs/heads/main/a
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Utilities
-  - Status Codes
   - HTTP
+  - Status Codes
   - Testing
+  - Utilities
 created: '2024-11-15'
 modified: '2026-03-16'
 specificationVersion: '0.19'
