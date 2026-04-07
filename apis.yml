@@ -1,5 +1,5 @@
 aid: httpstat
-name: httpstat.us
+name: Httpstat.us
 description: >-
   httpstat.us is a super simple service for generating different HTTP status
   codes. It is useful for testing how your own scripts and applications deal
@@ -18,7 +18,7 @@ modified: '2026-03-16'
 specificationVersion: '0.19'
 apis:
   - aid: httpstat:httpstat-api
-    name: httpstat.us API
+    name: Httpstat.us API
     description: >-
       A simple service for generating various HTTP status codes. Use this
       API to test how your scripts handle different HTTP responses. Returns
