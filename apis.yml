@@ -14,7 +14,7 @@ tags:
   - Testing
   - Utilities
 created: '2024-11-15'
-modified: '2026-03-16'
+modified: '2026-04-28'
 specificationVersion: '0.19'
 apis:
   - aid: httpstat:httpstat-api
@@ -33,10 +33,14 @@ apis:
       - type: Documentation
         url: https://httpstat.us/
       - type: OpenAPI
-        url: openapi/httpstat.yml
+        url: openapi/httpstat-openapi.yml
+      - type: Rules
+        url: rules/httpstat-rules.yml
 common:
   - type: Website
     url: https://httpstat.us/
+  - type: Repository
+    url: https://github.com/Readify/httpstatus
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

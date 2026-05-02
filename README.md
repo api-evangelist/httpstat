@@ -1,47 +1,58 @@
-# httpstat (httpstat)
-A super simple service for generating different HTTP codes. Its useful for testing how your own scripts deal with varying responses.
+# Httpstat.us (httpstat)
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-search/httpstat/refs/heads/main/apis.yml)
+httpstat.us is a super simple service for generating different HTTP status codes. It is useful for testing how your own scripts and applications deal with varying HTTP responses, allowing developers to simulate different server response scenarios.
+
+**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/httpstat/refs/heads/main/apis.yml)
 
 ## Scope
 
-- **Type:** Index 
-- **Position:** Consumer 
-- **Access:** 3rd-Party 
+- **Type:** Index
+- **Position:** Consumer
+- **Access:** 3rd-Party
 
-## Tags:
+## Tags
 
- - Utilities, Status Codes, HTTP
+- HTTP
+- Status Codes
+- Testing
+- Utilities
 
 ## Timestamps
 
-- **Created:** 2024-11-15 
-- **Modified:** 2024-11-15 
+- **Created:** 2024-11-15
+- **Modified:** 2026-04-28
 
 ## APIs
 
-### httpstat.us API
-A simple service for generating various HTTP status codes.  
-Use this API to test how your scripts handle different HTTP responses.
+### Httpstat.us API
 
+A simple service for generating various HTTP status codes. Use this API to test how your scripts handle different HTTP responses. Returns the specified HTTP status code on every request.
 
 **Human URL:** [https://httpstat.us/](https://httpstat.us/)
 
+**Base URL:** https://httpstat.us
 
-#### Tags:
+#### Tags
 
- - HTTP, Status Codes, Utilities
+- HTTP
+- Status Codes
+- Utilities
 
 #### Properties
 
 - [Documentation](https://httpstat.us/)
-- [OpenAPI](openapi/httpstat.yml)
+- [OpenAPI](openapi/httpstat-openapi.yml)
+- [Rules](rules/httpstat-rules.yml)
 - [BrunoCollection](httpstat/collection.bru)
 - [BrunoEnvironment](httpstat/environments/httpstat.bru)
+
+## Common Properties
+
+- [Website](https://httpstat.us/)
+- [Repository](https://github.com/Readify/httpstatus)
 
 ## Maintainers
 
 **FN:** Kin Lane
 
-**Email:** info@apievangelist.com
-
+**Email:** kin@apievangelist.com

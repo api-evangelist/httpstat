@@ -1,0 +1,50 @@
+aid: httpstat:httpstat-rules
+name: Httpstat.us Rules
+description: >-
+  Rules and guidelines for using the Httpstat.us API to simulate HTTP
+  responses for testing client behavior, error handling, retry logic,
+  and timeout scenarios.
+type: Rules
+tags:
+  - HTTP
+  - Status Codes
+  - Testing
+  - Rules
+rules:
+  - name: Use For Testing Only
+    description: >-
+      Httpstat.us is intended exclusively for testing and development.
+      Do not depend on it as a production endpoint or for live system
+      health checks.
+  - name: Respect Sleep Limits
+    description: >-
+      The hosted instance enforces a maximum sleep duration of roughly
+      230 seconds. Avoid issuing sleep values larger than this on the
+      shared instance.
+  - name: Honor Accept Header
+    description: >-
+      Set the Accept header to application/json when JSON responses
+      are required. Otherwise the service responds with text/plain by
+      default.
+  - name: Validate Status Code Inputs
+    description: >-
+      Only request status codes that the service supports. Unknown or
+      malformed codes return a 400 Bad Request response.
+  - name: Use Random Range Wisely
+    description: >-
+      When using the /random/{range} endpoint, supply a comma separated
+      list of codes or hyphenated ranges. Duplicate values bias the
+      probability of selection.
+  - name: Avoid Abusive Traffic
+    description: >-
+      The service is community hosted. Throttle requests, avoid load
+      testing the live host, and self host the open source project for
+      heavy use.
+  - name: Treat Responses As Simulated
+    description: >-
+      Returned status codes are simulated and do not represent real
+      server health. Do not infer dependency status from Httpstat
+      responses.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
