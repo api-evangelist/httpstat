@@ -1,0 +1,341 @@
+{
+  "item": [
+    {
+      "id": "94a2c0f3-ea22-4ea0-8e90-6940e6a4b2c9",
+      "name": "Generate a specific HTTP status code",
+      "request": {
+        "name": "Generate a specific HTTP status code",
+        "description": {
+          "content": "Generates a response with the given HTTP status code.  \nFor JSON responses, include the `Accept: application/json` header.\n",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            ":statusCode"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [
+            {
+              "disabled": false,
+              "key": "sleep",
+              "value": "<integer>",
+              "description": "Delay the response by the specified duration in milliseconds (max 230 seconds for hosted instance)."
+            }
+          ],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "statusCode",
+              "description": "(Required) The HTTP status code to generate."
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "text/plain"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "8a2871d3-59ee-448f-b568-4c498be09ceb",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                ":statusCode"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "sleep",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "statusCode",
+                  "description": "(Required) The HTTP status code to generate."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/plain"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "\"\"",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        },
+        {
+          "id": "dabfe8be-c4c0-420b-a0d4-f1726b9e7322",
+          "name": "Bad Request",
+          "originalRequest": {
+            "url": {
+              "path": [
+                ":statusCode"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "sleep",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "statusCode",
+                  "description": "(Required) The HTTP status code to generate."
+                }
+              ]
+            },
+            "method": "GET",
+            "body": {}
+          },
+          "status": "Bad Request",
+          "code": 400,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        },
+        {
+          "id": "da6fb6d0-0c3b-4548-a1d5-3c04a4ae3c55",
+          "name": "Generated HTTP status code",
+          "originalRequest": {
+            "url": {
+              "path": [
+                ":statusCode"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "key": "sleep",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "statusCode",
+                  "description": "(Required) The HTTP status code to generate."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/plain"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "Internal Server Error",
+          "code": 500,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "\"\"",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "0c5e53a1-8b0c-4568-a33f-939760360eea",
+      "name": "Generate a random HTTP status code",
+      "request": {
+        "name": "Generate a random HTTP status code",
+        "description": {
+          "content": "Generates a random HTTP status code from the specified range.  \nDuplicate ranges can increase their probability.\n",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "random",
+            ":range"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "disabled": false,
+              "type": "any",
+              "value": "<string>",
+              "key": "range",
+              "description": "(Required) The range of HTTP status codes to randomize (e.g., `200,201,500-504`)."
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "text/plain"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "32745dd9-3b92-44a2-a2cb-a096ef2baa33",
+          "name": "OK",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "random",
+                ":range"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "range",
+                  "description": "(Required) The range of HTTP status codes to randomize (e.g., `200,201,500-504`)."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/plain"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "\"\"",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        },
+        {
+          "id": "61a870f9-6b59-4f04-b843-8c609787acc2",
+          "name": "Generated random HTTP status code",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "random",
+                ":range"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "range",
+                  "description": "(Required) The range of HTTP status codes to randomize (e.g., `200,201,500-504`)."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/plain"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "Internal Server Error",
+          "code": 500,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "\"\"",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://httpstat.us",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "bb7db804-1e78-4e5a-8c65-8279d6cd5d52",
+    "name": "httpstat",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "A simple service for generating various HTTP status codes.  \nUse this API to test how your scripts handle different HTTP responses.\n",
+      "type": "text/plain"
+    }
+  }
+}

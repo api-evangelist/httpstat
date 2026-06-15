@@ -1,0 +1,54 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "httpstat",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Generate a specific HTTP status code",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://httpstat.us/:statusCode",
+        "params": [
+          {
+            "name": "statusCode",
+            "value": "",
+            "type": "path",
+            "description": "The HTTP status code to generate."
+          },
+          {
+            "name": "sleep",
+            "value": "",
+            "type": "query",
+            "description": "Delay the response by the specified duration in milliseconds (max 230 seconds for hosted instance)."
+          }
+        ]
+      },
+      "docs": "Generates a response with the given HTTP status code.  \nFor JSON responses, include the `Accept: application/json` header.\n"
+    },
+    {
+      "info": {
+        "name": "Generate a random HTTP status code",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://httpstat.us/random/:range",
+        "params": [
+          {
+            "name": "range",
+            "value": "",
+            "type": "path",
+            "description": "The range of HTTP status codes to randomize (e.g., `200,201,500-504`)."
+          }
+        ]
+      },
+      "docs": "Generates a random HTTP status code from the specified range.  \nDuplicate ranges can increase their probability.\n"
+    }
+  ],
+  "bundled": true
+}
