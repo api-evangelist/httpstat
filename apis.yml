@@ -35,6 +35,8 @@ apis:
       - type: Rules
         url: rules/httpstat-rules.yml
 common:
+  - type: AgenticAccess
+    url: agentic-access/httpstat-agentic-access.yml
   - type: DomainSecurity
     url: security/httpstat-domain-security.yml
   - type: Website
