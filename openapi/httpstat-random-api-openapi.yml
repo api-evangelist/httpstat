@@ -1,0 +1,34 @@
+openapi: 3.1.0
+info:
+  title: Httpstat Random API
+  description: "A simple service for generating various HTTP status codes.  \nUse this API to test how your scripts handle different HTTP responses.\n"
+  version: 1.0.0
+servers:
+- url: https://httpstat.us
+tags:
+- name: Random
+paths:
+  /random/{range}:
+    get:
+      summary: Generate a random HTTP status code
+      description: "Generates a random HTTP status code from the specified range.  \nDuplicate ranges can increase their probability.\n"
+      parameters:
+      - name: range
+        in: path
+        required: true
+        description: The range of HTTP status codes to randomize (e.g., `200,201,500-504`).
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            text/plain: {}
+            application/json: {}
+        default:
+          description: Generated random HTTP status code
+          content:
+            text/plain: {}
+            application/json: {}
+      tags:
+      - Random
