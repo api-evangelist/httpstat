@@ -1,0 +1,16 @@
+{
+  "provider": "httpstat",
+  "sources": [
+    "httpstat-httpstat-api-openapi.yml",
+    "httpstat-random-api-openapi.yml"
+  ],
+  "outputs": [
+    "httpstat-httpstat-api-openapi.yml",
+    "httpstat-random-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
