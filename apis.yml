@@ -57,6 +57,11 @@ apis:
   - type: Rules
     url: rules/httpstat-rules.yml
 common:
+  - type: IssueTracker
+    url: https://github.com/Readify/httpstatus/issues
+  - type: License
+    name: MIT
+    url: https://github.com/Readify/httpstatus/blob/main/LICENSE
   - type: AgenticAccess
     url: agentic-access/httpstat-agentic-access.yml
   - type: DomainSecurity
