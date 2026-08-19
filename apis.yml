@@ -26,7 +26,7 @@ tags:
   - Utilities
 created: '2024-11-15'
 modified: '2026-05-19'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: httpstat:httpstat-httpstat-api
   name: Httpstat.us Httpstat API
