@@ -1,0 +1,43 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Httpstat API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Httpstat",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Generate a specific HTTP status code",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://httpstat.us/:statusCode",
+            "params": [
+              {
+                "name": "statusCode",
+                "value": "",
+                "type": "path",
+                "description": "The HTTP status code to generate."
+              },
+              {
+                "name": "sleep",
+                "value": "",
+                "type": "query",
+                "description": "Delay the response by the specified duration in milliseconds (max 230 seconds for hosted instance)."
+              }
+            ]
+          },
+          "docs": "Generates a response with the given HTTP status code.  \nFor JSON responses, include the `Accept: application/json` header.\n"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

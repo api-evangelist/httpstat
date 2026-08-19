@@ -1,0 +1,220 @@
+{
+  "item": [
+    {
+      "id": "20eaf78c-6d64-40fc-93c3-2daf7def737b",
+      "name": "Httpstat",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "192070c3-28a2-480f-8c4d-735573ca2893",
+          "name": "Generate a specific HTTP status code",
+          "request": {
+            "name": "Generate a specific HTTP status code",
+            "description": {
+              "content": "Generates a response with the given HTTP status code.  \nFor JSON responses, include the `Accept: application/json` header.\n",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                ":statusCode"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "sleep",
+                  "value": "<integer>",
+                  "description": "Delay the response by the specified duration in milliseconds (max 230 seconds for hosted instance)."
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "statusCode",
+                  "description": "(Required) The HTTP status code to generate."
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/plain"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "40b67f51-6c00-49a5-be6b-775542301a34",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ":statusCode"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "sleep",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "statusCode",
+                      "description": "(Required) The HTTP status code to generate."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "ba444cd5-34f0-4021-91db-e5e3dd20849f",
+              "name": "Bad Request",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ":statusCode"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "sleep",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "statusCode",
+                      "description": "(Required) The HTTP status code to generate."
+                    }
+                  ]
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "1669cbc9-09ae-4dfa-969e-c377beba4b46",
+              "name": "Generated HTTP status code",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    ":statusCode"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "sleep",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "statusCode",
+                      "description": "(Required) The HTTP status code to generate."
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/plain"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "\"\"",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://httpstat.us",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "1242762d-09d2-4e08-8aae-d9f36341b91a",
+    "name": "Httpstat API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "A simple service for generating various HTTP status codes.  \nUse this API to test how your scripts handle different HTTP responses.\n",
+      "type": "text/plain"
+    }
+  }
+}

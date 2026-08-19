@@ -1,0 +1,37 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Httpstat Random API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Random",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Generate a random HTTP status code",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://httpstat.us/random/:range",
+            "params": [
+              {
+                "name": "range",
+                "value": "",
+                "type": "path",
+                "description": "The range of HTTP status codes to randomize (e.g., `200,201,500-504`)."
+              }
+            ]
+          },
+          "docs": "Generates a random HTTP status code from the specified range.  \nDuplicate ranges can increase their probability.\n"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
