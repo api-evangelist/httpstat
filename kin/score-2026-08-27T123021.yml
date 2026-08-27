@@ -1,0 +1,55 @@
+# Kin Score artifact — httpstat — 2026-08-27T123021
+# The API Evangelist rating (https://github.com/api-evangelist/kin-score). Generated; do not edit.
+---
+kin_score:
+  slug: httpstat
+  schema_version: 0.15.1
+  scored_at: '2026-08-27'
+  run_ts: 2026-08-27T123021
+  composite: 18.3
+  band: emerging
+  facets:
+    discoverability: 59.3
+    contract_quality: 45.6
+    governance: 0.0
+    operational_transparency: 13.2
+    developer_ergonomics: 4.8
+    commercial_clarity: 0.0
+    contract_governance: 0.0
+    access_clarity: 0.0
+  agent_readiness:
+    score: 20.0
+    band: agent-aware
+    dimensions:
+      spec_presence: true
+      agentic_access: derived
+      reversibility_documented: na
+      mcp_server: false
+      auth_clarity: false
+      idempotency: na
+      error_semantics: false
+      openapi_examples: false
+      rate_limit_signal: documented
+      event_surface_described: false
+      agent_skills: false
+      well_known_catalog: false
+      consent_identity: false
+      agent_card: false
+      dry_run_mode: na
+      delegated_identity: false
+      protected_resource_metadata: false
+      dynamic_client_registration: false
+      agentic_commerce: false
+  regulatory:
+    applies: true
+    regime: Energy & Utilities
+    regime_id: energy_utilities
+    score: 8.1
+    matched_via: tags
+  provenance:
+    agentic_access: derived
+    contracts:
+      total: 2
+      derived: 0
+      coverage: 0.0
+      callable: 100.0
