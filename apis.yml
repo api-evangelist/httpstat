@@ -6,6 +6,19 @@ description: >-
   response scenarios.
 url: https://raw.githubusercontent.com/api-evangelist/httpstat/refs/heads/main/apis.yml
 type: Index
+deliveryModel:
+  model: self-hosted
+  license: MIT
+  open_source: true
+  commercial: false
+  callable_host: true
+  label: Self-hosted open source · you run it yourself
+  confidence: high
+  source:
+  - license
+  - openapi
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
