@@ -34,7 +34,7 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/httpstat.png
 tags:
   - HTTP
-  - Status-Codes
+  - Status Codes
   - Testing
   - Utilities
 tags_raw:
