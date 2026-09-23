@@ -1,8 +1,7 @@
 {
   "provider": "httpstat",
   "sources": [
-    "httpstat-httpstat-api-openapi.yml",
-    "httpstat-random-api-openapi.yml"
+    "_original/httpstat-openapi.yml"
   ],
   "outputs": [
     "httpstat-httpstat-api-openapi.yml",
@@ -11,6 +10,17 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "httpstat-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "httpstat-openapi.yml: tagged paths GET /{statusCode} -> Httpstat",
+    "httpstat-openapi.yml: tagged paths GET /random/{range} -> Random",
+    "httpstat-openapi.yml: declared missing tag: Httpstat",
+    "httpstat-openapi.yml: declared missing tag: Random",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "httpstat-httpstat-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "httpstat-random-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

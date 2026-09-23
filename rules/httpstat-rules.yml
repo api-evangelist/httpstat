@@ -1,11 +1,11 @@
-aid: httpstat:httpstat-rules
-name: Httpstat.us Rules
+x-aid: httpstat:httpstat-rules
+x-name: Httpstat.us Rules
 description: >-
   Rules and guidelines for using the Httpstat.us API to simulate HTTP
   responses for testing client behavior, error handling, retry logic,
   and timeout scenarios.
-type: Rules
-tags:
+x-type: Rules
+x-tags:
   - HTTP
   - Status Codes
   - Testing
@@ -45,6 +45,6 @@ rules:
       Returned status codes are simulated and do not represent real
       server health. Do not infer dependency status from Httpstat
       responses.
-maintainers:
+x-maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

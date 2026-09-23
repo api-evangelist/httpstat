@@ -1,7 +1,9 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Httpstat Random API
-  description: "A simple service for generating various HTTP status codes.  \nUse this API to test how your scripts handle different HTTP responses.\n"
+  title: httpstat Random API
+  description: 'A simple service for generating various HTTP status codes.
+
+    Use this API to test how your scripts handle different HTTP responses.'
   version: 1.0.0
 servers:
 - url: https://httpstat.us
@@ -11,7 +13,9 @@ paths:
   /random/{range}:
     get:
       summary: Generate a random HTTP status code
-      description: "Generates a random HTTP status code from the specified range.  \nDuplicate ranges can increase their probability.\n"
+      description: 'Generates a random HTTP status code from the specified range.
+
+        Duplicate ranges can increase their probability.'
       parameters:
       - name: range
         in: path
@@ -32,3 +36,5 @@ paths:
             application/json: {}
       tags:
       - Random
+      operationId: getRandomByRange
+      x-operation-id-source: derived
