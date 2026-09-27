@@ -36,12 +36,12 @@ tags:
   - HTTP
   - Status-Codes
   - Testing
-  - Utilities
+  - Developer Tools
 tags_raw:
   - HTTP
   - Status Codes
   - Testing
-  - Utilities
+  - Developer Tools
 created: '2024-11-15'
 modified: '2026-05-19'
 specificationVersion: '0.23'
@@ -50,7 +50,6 @@ apis:
   name: Httpstat.us Httpstat API
   description: The Httpstat API from Httpstat.us — 1 operation(s) for httpstat.
   humanURL: https://httpstat.us/
-  baseURL: https://httpstat.us
   tags:
   - Httpstat
   properties:
@@ -64,7 +63,6 @@ apis:
   name: Httpstat.us Random API
   description: The Random API from Httpstat.us — 1 operation(s) for random.
   humanURL: https://httpstat.us/
-  baseURL: https://httpstat.us
   tags:
   - Random
   properties:
