@@ -73,6 +73,12 @@ apis:
   - type: Rules
     url: rules/httpstat-rules.yml
 common:
+  - type: Plans
+    url: plans/httpstat-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/httpstat-rate-limits.yml
+  - type: FinOps
+    url: finops/httpstat-finops.yml
   - type: IssueTracker
     url: https://github.com/Readify/httpstatus/issues
   - type: License
