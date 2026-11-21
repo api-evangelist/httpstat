@@ -53,7 +53,7 @@ artifacts:
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-11-06T143934.yml:
+  kin/checks-2026-11-13T214628.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-23T000603.yml:
@@ -122,6 +122,9 @@ artifacts:
   kin/score-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-11-13T214628.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   openapi/_original/httpstat-openapi.yml:
     method: harvested
     evidence: found in openapi/_original/; the fetch URL and bytes were not recorded, so byte-identity
@@ -144,6 +147,3 @@ artifacts:
   security/httpstat-domain-security.yml:
     method: unknown
     evidence: no authorship recorded
-  sla/httpstat-sla.yml:
-    method: generated
-    evidence: declared in the artifact
